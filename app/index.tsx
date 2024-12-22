@@ -31,9 +31,7 @@ export default function Index() {
     }
   }, [ScreenState]);
   function handler(val: string) {
-    console.log("val at top", val);
     isEqualPressed.current = false;
-    console.log(typeof val);
     let operators_arr = ["+", "-", "*", "/"];
     setColor("black");
     if (ScreenState === "Syntax Error" || ScreenState === "Enter number") {
@@ -65,7 +63,6 @@ export default function Index() {
           setScreenState(
             String(finalRes).substring(0, String(finalRes).length - 1)
           );
-          console.log("The screen state is ", ScreenState);
           exp =
             String(finalRes).substring(0, String(finalRes).length - 1) + " "; //The " " is added because I know that the control of the code will go in a piece of code where the exp's last digit will be trimmed again therefore when that happens no data is lost and " " is trimmed
         }
