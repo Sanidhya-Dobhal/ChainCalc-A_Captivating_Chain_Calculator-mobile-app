@@ -12,7 +12,7 @@ This is the **React Native version** of my React project, [ChainCalc](https://gi
 
 ## Photos:
 
-<img src = "./Images/readMe Images/Calculator.png">
+<img src = "./Images/readMe Images/Calculator.png" style ="height:500px">
 
 ## 📱 Download the APK
 
